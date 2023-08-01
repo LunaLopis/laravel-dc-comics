@@ -1,1 +1,49 @@
 @import '~bootstrap/scss/bootstrap';
+
+header {
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar {
+    color: red;
+}
+
+.font-size {
+    font-size: small;
+    font-weight: 900;
+}
+
+.logo {
+    max-width: 60px;
+}
+
+li {
+    display: inline-block;
+    font-size: 15px;
+    padding-left: 20px;
+
+    a {
+        padding: 0px 0px 55px 10px;
+    }
+
+    :hover {
+        border-bottom: 5px solid blue;
+        color: blue;
+    }
+}
+
+.jumbotron {
+    width: 100vw;
+    background-image: url('../img/jumbotron.jpg');
+    background-size: cover;
+    height: 350px;
+}
+
+.height-100px {
+    height: 100px;
+}
+
+.bg-black {
+    background-color: black;
+}
