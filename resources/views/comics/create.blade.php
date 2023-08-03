@@ -24,19 +24,14 @@
            
                     <div class="form-group">
                         <label class="control-label"></label>
-                        <input type="thumb" id="thumb" name="thumb" class="form-control" placeholder="thumb">
+                        <input type="text" id="thumb" name="thumb" class="form-control" placeholder="thumb">
                     </div>
              
             
                     <div class="form-group">
                         <label class="control-label"></label>
-                        <input type="text" id="thumb" name="thumb" class="form-control" placeholder="thumb">
+                        <input type="text" id="cover_image" name="cover_image" class="form-control" placeholder="cover_image">
                     </div>
-   
-                    <div class="form-group">
-                        <label class="control-label"></label>
-                        <input type="text" id="thumb" name="cover_image" class="form-control" placeholder="cover_image">
-
                     <div class="form-group">
                         <label class="control-label"></label>
                         <input type="text" id="thumb2" name="thumb2" class="form-control" placeholder="thumb2">
