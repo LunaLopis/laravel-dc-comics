@@ -19,3 +19,5 @@ Route::get('/', function () {
 });
 Route::get('/', [ComicController::class, 'index']);
 Route::resource('comics', ComicController::class);
+
+

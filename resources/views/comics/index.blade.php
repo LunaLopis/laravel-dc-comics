@@ -3,7 +3,7 @@
     <section class="bg-black pt-5">
         <div class="container">
             <div class="row">
-                
+                <a href="{{route('comics.create')}}">add comic</a>
                   @foreach ($comics as $comic)
                     <div class="col col-lg-2 col-md-4 col-sm-12">
                         <a href="{{ route('comics.show', $comic->id) }}">
@@ -16,6 +16,7 @@
                         </a>
                     </div>
                 @endforeach 
+                
             </div>
         </div>
     </section>
