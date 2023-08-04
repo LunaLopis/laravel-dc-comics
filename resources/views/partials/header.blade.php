@@ -39,11 +39,11 @@
         <nav>
             <ul class="navbar" >
                 <li>
-                   <a href="">CHARACTER</a>
-                </li>
-                <li>
                     <a href="{{ url('/comics') }}">COMICS</a>
                  </li>
+                 <li>
+                  <a href="{{route('comics.create')}}">AGGIUNGI COMIC</a>
+                </li>
                  <li>
                     <a href="">MOVIES</a>
                  </li>
