@@ -10,7 +10,7 @@
                     @method('PUT')
                     <div class="form-group">
                         <label class="control-label"></label>
-                        <input type="text" id="title" name="title" class="form-control" placeholder="titolo" value="{{$comic->title}}">
+                        <input type="text" id="title" name="title" class="form-control" placeholder="titolo" value="{{old('title') ?? $comic->title}}">
                     </div>
                 
                     <div class="form-group">
@@ -70,6 +70,16 @@
                 </div>
                 </form>
 
+                {{-- validazione --}}
+                @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach($errors->all() as $error)
+                        <li> {{$error}}</li>                        
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
             </div>
         </div>
     </div>

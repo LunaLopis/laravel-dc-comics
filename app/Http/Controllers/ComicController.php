@@ -42,8 +42,6 @@ class ComicController extends Controller
         $form_data = $this->validation($request->all());
 
 
-        // $request->validate();
-        // $form_data = $request->all();
         $comic = new Comic();
         $comic->title = $form_data['title'];
         $comic->description = $form_data['description'];
@@ -80,7 +78,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        $form_data = $this->validation($request->all());
+        
         return view('comics.edit', compact('comic'));
     }
 
@@ -93,7 +91,8 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {  
-        $form_data = $request->except('_token');
+        $form_data = $this->validation($request->all());
+        // $form_data = $request->except('_token');
         $comic->update($form_data);
         return redirect()->route('comics.index');
     }
