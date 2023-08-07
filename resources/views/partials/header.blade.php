@@ -70,7 +70,11 @@
                  </li>
             </ul>
         </nav>
-        <input type="search" placeholder="Search" aria-label="Search">
+        <form action="{{ route('comics.search') }}" method="GET">
+         <input type="text" name="title" placeholder="Search by Title">
+         <button type="submit">Search</button>
+     </form>
+     
    
     </header>
 
